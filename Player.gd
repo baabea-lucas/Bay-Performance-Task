@@ -1,4 +1,5 @@
 extends Area2D
+signal hit
 
 @export var Speed = 400
 
@@ -28,3 +29,8 @@ func _process(delta):
 		
 		
 		
+
+
+func _on_body_entered(body):
+	hide()
+
